@@ -1,0 +1,45 @@
+{
+    "title": "Vishwa Varakari Samsthan Pandharpur Mutt",
+    "organization": "Vishwa Varakari Samsthan Pandharpur Mutt",
+    "location": {
+      "city": "Pandharpur",
+      "state": "Maharashtra",
+      "description": "Pandharpur is one of the revered pilgrimage sites in Maharashtra. It is located 65 km west of Sholapur, on the banks of the river Bhimarathi also known as Chandrabhaga.",
+      "temple": "Pandharpur enshrines Vithoba in a grand temple, on the banks of the river."
+    },
+    "establishment": {
+      "blessingsFrom": [
+        "Acharya of Sringeri Sharada Peeth",
+        "Shri Baba Maharaj Satarkar",
+        "Shri Krishna Premi Maharaj"
+      ],
+      "muttAreaSqft": 12000,
+      "purpose": "To encourage more and more people from various states to participate and receive the blessings of Lord Vittal.",
+      "proximity": "10 minutes’ walk from Vittal Mandir"
+    },
+    "activities": [
+      "Bhajan",
+      "Harikeerthan",
+      "Pravachan"
+    ],
+    "specialMonths": [
+      "Aashadi",
+      "Karthiki"
+    ],
+    "contact": {
+      "phoneNumbers": [
+        "+91-9443615263",
+        "+91-9995968109",
+        "+91-9789045839"
+      ]
+    },
+    "address": {
+      "name": "Dada Maharaj Satarkar Mutt",
+      "landmark": "Near New Solapur Pandharpur Bridge",
+      "area": "Govindapura",
+      "city": "Pandharpur",
+      "pincode": "413304"
+    },
+    "welcomeMessage": "Vishwa Varakari Samsthan welcomes all the devotees to Pandharpur and we are happy to accommodate in our Mutt."
+  }
+  
