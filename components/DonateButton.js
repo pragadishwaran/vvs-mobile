@@ -1,34 +1,30 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text, Linking } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { commonStyles } from './styles';
 
 export default function DonateButton(){
   const navigation = useNavigation();
+  const openDonationLink = async () => {
+    const url = 'https://pages.razorpay.com/gosamrakshanavvs';
+    // Check if the device can open the URL
+    const supported = await Linking.canOpenURL(url);
+
+    if (supported) {
+      await Linking.openURL(url);
+    } else {
+      Alert.alert(`Currently we are facing some issue`);
+    }
+  }
   return (
     <TouchableOpacity
-      style={styles.ctaButton}
-      onPress={() => navigation.navigate('DonateNow')}
+      style={commonStyles.donateButton}
+      onPress={openDonationLink}
       activeOpacity={0.85}
     >
-      <Text style={styles.ctaLabel}>Donate now</Text>
+      <Text style={commonStyles.donateButtonText}>Donate now</Text>
     </TouchableOpacity>
   );
 }
-
-const styles = StyleSheet.create({
-  ctaButton: {
-    marginTop: 20,
-    backgroundColor: '#FEB003',
-    borderRadius: 8,
-    paddingVertical: 12,
-    alignItems: 'center',
-    shadowColor: '#000',
-    shadowOpacity: 0.15,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 6,
-    elevation: 3,
-  },
-  ctaLabel: { fontSize: 16, fontWeight: '700', color: '#000' },
-});
 
 

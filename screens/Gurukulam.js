@@ -50,3 +50,4 @@ const styles = StyleSheet.create({
   paragraph: { marginTop: 12, fontSize: 14, lineHeight: 20 },
   eligibility: { marginTop: 16, fontSize: 14, fontWeight: '600' },
 });
+

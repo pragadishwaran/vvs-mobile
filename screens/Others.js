@@ -7,9 +7,9 @@ const ITEMS = [
   {key: 'Publications', label: 'Publications', icon: 'book-outline' },
   {key: 'Gallery', label: 'Gallery', icon: 'images-outline' },
   { key: 'Enrollments', label: 'Enrollments', icon: 'create' },
-  { key: 'DonateNow', label: 'Donate now', icon: 'card' },
   { key: 'AboutUs', label: 'About us', icon: 'information-circle' },
   { key: 'PandharpurMutt', label: 'Pandharpur Mutt', icon: 'office-building-outline', pack: 'mci' },
+  { key: 'Contact', label: 'Contact', icon: 'call-outline' }
 ];
 
 // { key: 'GoSamrakshana', label: 'Go samrakshana', icon: 'cow', pack: 'mci' },

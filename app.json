@@ -1,5 +1,19 @@
 {
-  "plugins": [
-    "expo-font"
-  ]
+  
+  "expo": {
+    "android": {
+      "package": "com.pragadish1995.vvsapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8cc7dc52-5a97-4955-92fc-81ff81732180"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.pragadish1995.vvsapp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
 }

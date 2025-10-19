@@ -1,2 +1,61 @@
 node_modules
 .expo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo & React Native build outputs
+/.expo/
+/dist/
+/build/
+android/app/build/
+ios/build/
+
+# Xcode
+*.xcworkspace
+!vvsapp.xcworkspace/contents.xcworkspacedata
+*.xcuserdata
+*.lock
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# CocoaPods
+/ios/Pods/
+/ios/Podfile.lock
+
+# macOS
+.DS_Store
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Environment files
+.env
+.env.*
+
+# Fastlane
+/fastlane/report.xml
+/fastlane/Preview.html
+/fastlane/screenshots
+
+# Bundler / Metro cache
+/node_modules/
+/.expo-shared/
+.expo/**/packager-info.json
+
+# Android Studio
+/.gradle/
+/*.iml
+
+# Misc
+*.log
+*.tmp
+*.temp
+dist/
+

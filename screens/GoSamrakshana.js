@@ -2,9 +2,30 @@ import React from 'react';
 import { SafeAreaView, ScrollView, Text, StyleSheet } from 'react-native';
 import gosamrakshana from '../data/gosamrakshana.json';
 import DonateButton from '../components/DonateButton';
+import ImageGallery from '../components/ImageGallery';
+
+// Import gallery images from assets/gosala
+const images = [
+  require('../assets/gosala/gho1.jpg'),
+  require('../assets/gosala/gho2.jpg'),
+  require('../assets/gosala/gho3.jpg'),
+  require('../assets/gosala/gho4.jpg'),
+  require('../assets/gosala/gho5.jpg'),
+  require('../assets/gosala/gho6.jpg'),
+  require('../assets/gosala/gho7.jpg'),
+  require('../assets/gosala/gho8.jpg'),
+  require('../assets/gosala/gho9.jpg'),
+  require('../assets/gosala/gho10.jpg'),
+  require('../assets/gosala/gho11.jpg'),
+  require('../assets/gosala/gho12.jpg'),
+  require('../assets/gosala/gho13.jpg'),
+  require('../assets/gosala/gho14.jpg'),
+  require('../assets/gosala/gho15.jpg')
+];
 
 
 export default function GoSamrakshanaTrust() {
+  
   return (
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.container}>
@@ -39,7 +60,11 @@ export default function GoSamrakshanaTrust() {
         <Text style={styles.sectionIntro}>Invitation</Text>
         <Text style={styles.paragraph}>{gosamrakshana.invitation}</Text>
 
-        <DonateButton />
+  {/* Image gallery for Go Samrakshana */}
+  <Text style={styles.sectionIntro}>Gallery</Text>
+  <ImageGallery images={images} />
+
+  <DonateButton />
 
       </ScrollView>
     </SafeAreaView>

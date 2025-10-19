@@ -1,8 +1,19 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, Text, StyleSheet, View } from 'react-native';
 import muttData from '../data/pandarimutt.json';
+import ImageGallery from '../components/ImageGallery';
 
 export default function PandharpurMutt() {
+  const images = [
+    require('../assets/pandari/pandari1.jpg'),
+    require('../assets/pandari/pandari2.jpg'),
+    require('../assets/pandari/pandari3.jpg'),
+    require('../assets/pandari/pandari4.jpg'),
+    require('../assets/pandari/pandari5.jpg'),
+    require('../assets/pandari/pandari6.jpg'),
+    require('../assets/pandari/pandari7.jpg'),
+    require('../assets/pandari/pandari8.jpg')
+  ]
   return (
     <SafeAreaView style={styles.screen}>
       <ScrollView contentContainerStyle={styles.container}>
@@ -64,6 +75,9 @@ export default function PandharpurMutt() {
         {/* Welcome Message */}
         <Text style={styles.sectionIntro}>Welcome</Text>
         <Text style={styles.paragraph}>{muttData.welcomeMessage}</Text>
+         {/* Gallery Message */}
+        <Text style={styles.sectionIntro}>Gallery</Text>
+        <ImageGallery images={images} />
 
       </ScrollView>
     </SafeAreaView>

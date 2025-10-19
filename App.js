@@ -44,14 +44,14 @@ export default function App() {
           <Stack.Navigator
             initialRouteName="Home"
               screenOptions={{
-                // Increase header height and style
-                headerStyle: { backgroundColor: '#FEB003', height: 92 },
+                // Slimmer header height and style
+                headerStyle: { backgroundColor: '#FEB003', height: 64 },
                 headerTintColor: '#000',
                 headerTitleStyle: {
                   fontWeight: '700',
                   color: '#000',
-                  // nudge title down slightly so it's vertically centered in the taller header
-                  paddingTop: 8,
+                  // small top padding to vertically center the title in the reduced header
+                  paddingTop: 2,
                   // use the loaded Samarkan font
                   fontFamily: 'Samarkan',
                 },
