@@ -2,8 +2,11 @@ import React from 'react';
 import { SafeAreaView, ScrollView, Text, StyleSheet, View } from 'react-native';
 import muttData from '../data/pandarimutt.json';
 import ImageGallery from '../components/ImageGallery';
+import MapPreview from '../components/MapPreview';
+import DonateButton from '../components/DonateButton';
 
 export default function PandharpurMutt() {
+  const MAP_LINK = 'https://maps.app.goo.gl/Xoco6L9FETNtdG289';
   const images = [
     require('../assets/pandari/pandari1.jpg'),
     require('../assets/pandari/pandari2.jpg'),
@@ -71,6 +74,7 @@ export default function PandharpurMutt() {
         <Text style={styles.paragraph}>
           {muttData.address.city} – {muttData.address.pincode}
         </Text>
+        <MapPreview title="Pandari mutt" link={MAP_LINK} subtitle="Open in Maps" />
 
         {/* Welcome Message */}
         <Text style={styles.sectionIntro}>Welcome</Text>
@@ -78,7 +82,7 @@ export default function PandharpurMutt() {
          {/* Gallery Message */}
         <Text style={styles.sectionIntro}>Gallery</Text>
         <ImageGallery images={images} />
-
+        <DonateButton />
       </ScrollView>
     </SafeAreaView>
   );
